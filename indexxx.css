@@ -1,0 +1,910 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.navigation{
+    height: 400px;
+	margin-right:0;
+	padding-right: 15px;
+	margin-left: 0;
+	border: 4px solid black;
+	margin-bottom: 0px;
+
+    
+}
+
+.navigation1{
+	height: 100px;
+	margin-right:0;
+	padding-right: 15px;
+	margin-left: 0;
+	border: 1px solid black;
+	margin-bottom: 0px;
+	background: url(imagesfolder/headerrr.jpg);
+}
+
+.h1 {
+text-align: center;
+color: white;
+background-color: rgba(0, 11, 5, 0.2);
+font-size: 20px;
+margin-top: 0px;
+height: 30px;
+padding: 40px;
+
+}
+
+.h11{
+	margin-top: 100px;
+	text-align: center;
+font-family: roboto;
+color: black;
+font-weight: bold;
+font-size: 50px;
+padding: 20px;
+margin-bottom: 20px;
+}
+
+.index-content {
+	padding: 20px;
+}
+
+.index-button1 {
+	width: 100px;
+	color: white;
+	background-color: black;
+	height: 50px;
+	border: 2px solid black;
+	margin-left: 40%;
+	padding: 10px;
+}
+
+.navigation .logo{
+float: left;
+margin-left: 20px;
+margin-top: 10px;
+width: 200px;
+height: 75px;
+}
+.navigation1 .logo{
+	float: left;
+margin-left: 20px;
+margin-top: 10px;
+width: 100px;
+height: 75px;
+}
+
+
+ .nav-items ul li  a {
+	display: flex;
+	flex-direction: row;
+	 margin-left: 75px;
+	padding-top: 35px;
+font-size: 20px;
+	padding-right: 5px;
+	float: left;
+    text-decoration:none;
+color: white;
+}
+
+.nav-items1 ul li a {
+		margin-left: 75px;
+	   padding-top: 35px;
+   font-size: 20px;
+	   padding-right: 5px;
+	   float: left;
+	   text-decoration:none;
+   color: white;
+   }
+}
+
+
+@media (max-width: 800px)
+{
+	.menu-button {
+		width: 40px;
+	}
+}
+@media (max-width: 700px) {
+	.navigation {
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  padding-top: 10px;
+	}
+  }
+
+  @media (min-width: 950px) {
+	  .buttonn {
+		  display: none;
+	  }
+  }
+  @media (max-width: 950px)
+  {
+	  .nav-items1 ul li a {
+		  display: none;
+	  }
+  }
+  @media (max-width: 950px) {
+	.navigation .nav-items {
+display: none;
+flex-direction: column;
+flex-wrap: nowrap;	  justify-content: space-around;
+	}
+  }
+.center-pic  {
+    width: 100%;
+    height: auto;
+	
+
+
+
+}
+
+
+
+
+.container  {
+
+display: flex;
+column-count: 3;
+column-gap: 30px;
+justify-content: space-between;
+align-items: stretch;
+width: 80%;
+
+}
+
+.articles{
+	padding: 30px;
+	margin: 20px;
+	background-color: aquamarine;
+
+	width: 33.3%;
+
+}
+
+footer  {
+	background-color: gray;
+	display: flex;
+	column-count: 3;
+	justify-content: space-between;
+}
+
+
+.carousel {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  flex-grow: 1;
+}
+
+/* By default we're hiding items (except the initial one) until the JS initiates. Elements are absolutely positioned with a width of 100% (as we're styling for mobile first), letting the content's height dictate the height of the carousel. Our magic property here for all our animation needs is 'transition', taking the properties we wish to animate 'transform' and 'opacity', along with the length of time in seconds. */
+.carousel__photo {
+  opacity: 0;
+  position: absolute;
+  left:0;
+  top:0;
+  width: 700px;
+  height: 500px;
+  margin: auto;
+  padding: 1rem 4rem;
+  z-index: 100;
+  transition: transform .5s, opacity .5s, z-index .5s;
+}
+.galleryh1{
+	margin-left: 40%;
+	margin-top: 40px;
+
+}
+
+.carousel-photoo{
+
+	opacity: 1;
+	margin-left: 100px;
+	top: 50px;
+	width: 550px;
+	height: 500px;
+	grid-column-start: 1;
+grid-column-end: 3;
+}
+
+/* Display the initial item and bring it to the front using 'z-index'. These styles also apply to the 'active' item. */
+.carousel__photo.initial,
+.carousel__photo.active {
+  opacity: 1;
+  position: relative;
+  z-index: 900;
+}
+
+/* Set 'z-index' to sit behind our '.active' item. */
+.carousel__photo.prev,
+.carousel__photo.next {
+  z-index: 800;
+}
+
+/* Translate previous item to the left */
+.carousel__photo.prev {
+  transform: translateX(-100%);
+}
+
+/* Translate next item to the right */
+.carousel__photo.next {
+  transform: translateX(100%);
+}
+
+/* Style navigation buttons to sit in the middle, either side of the carousel. */
+.carousel__button--prev,
+.carousel__button--next {
+  position: absolute;
+  top:50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: #FFF;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  cursor: pointer; 
+  z-index: 1001; /* Sit on top of everything */
+  border:1px solid black;
+/*  opacity: 0;  Hide buttons until carousel is initialised 
+  transition:opacity 1s;*/
+}
+
+.navigation{
+	background: url(imagesfolder/image.jpg);
+	min-height: 600px;
+
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  
+	/* Needed to position the navbar */
+	position: relative;
+	margin-bottom: 40px;
+
+}
+.carousel__button--prev {
+  left:0;
+}
+
+.carousel__button--next {
+  left:770px;
+}
+
+/* Use pseudo elements to insert arrows inside of navigation buttons */
+.carousel__button--prev::after,
+.carousel__button--next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.carousel__button--next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.search input[type=text]{ 
+	width:200px; 
+	height:25px; 
+	border-radius:25px; 
+	border: none; 
+	margin-left: 20px;
+} 
+@media (max-width: 950px){.search input[type=text]
+{
+		display: none;
+	}
+}
+	  
+.search{ 
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin:7px; 
+	margin-top: 30px;
+} 
+
+@media (max-width: 950px){.search button {display: none;}}
+	  
+.buttonn1{
+	background-color: #0074D9; 
+	width: 90px;
+	height: 50px;
+	color: #f2f2f2; 
+	padding: 10px 10px; 
+float:center;	font-size: 12px; 
+	border: none; 
+	cursor: pointer;}
+
+.buttonn {
+	background-color: #0074D9; 
+	width: 70px;
+	height: 30px;
+	color: #f2f2f2; 
+	margin-left: 20px;
+	padding: 5px 10px; 
+	margin-right: 16px; 
+	font-size: 12px; 
+	border: none; 
+	cursor: pointer;
+	float: right; 
+}  
+}
+.search button{ 
+	background-color: #0074D9; 
+	width: 70px;
+	height: 30px;
+	color: #f2f2f2; 
+	margin-left: 20px;
+	padding: 5px 10px; 
+	margin-right: 16px; 
+	font-size: 12px; 
+	border: none; 
+	cursor: pointer; 
+}  
+
+.navv a {
+	color: black;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	display: block;
+  }
+.navv { overflow: hidden;
+	position: relative;}
+.navv #myLinks
+{
+display: none;
+}
+
+.gallery-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+.gallery-container1 {
+	top: 50px;
+
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 40px;
+	
+	padding: 10px;
+}
+.sidebar {
+height: 500px;
+width: 500px;
+margin-top: 70px;
+margin-right: 150px;
+
+}
+h1 {
+	font-size: 30px;
+	font-weight: bold;
+font-family: roboto;
+margin-bottom: 40px;
+}
+
+p{font-family: roboto;
+font-size: 15px;}
+.indexh1{
+	font-weight: bold;
+font-family: roboto;	font-size: 50px;
+	padding: 20px;
+
+}
+
+.index-container1{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 70px;
+}
+
+.contentt{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	margin-left: 150px;
+}
+.par2{
+font-family: roboto;	font-size: 20px;
+}
+.photo2{
+	margin-right: 150px;
+	width: 500px;
+	height: 500px;
+
+}
+
+.gallery-container2{
+	display: grid;
+	grid-template-columns: auto auto auto;
+grid-gap: 60px;
+margin-left: 90px;
+margin-right: 90px;
+margin-top: 60px;
+padding: 20px;
+}
+
+.article1{
+	grid-row-start: 1;
+	grid-row-end: 4;
+}
+
+.paragraphs{
+	border: 1px solid black;
+	position: relative;
+	height: 200px;
+	overflow: hidden;
+	padding-top: 10px;
+
+}
+
+.paragraphs .close{
+	display: none;}
+
+.article {
+height: auto;
+}
+.article1photo {
+	width: 330px;
+	height: 280px;
+	margin-bottom: 30px;
+	
+}
+
+.article2photo{
+	width: 330px;
+	height: 280px;
+	margin-bottom: 30px;	
+}
+
+.article3photo{
+
+	width: 330px;
+	height: 280px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+h2{
+font-family: roboto;	font-size: 30px;
+	margin-bottom: 30px;
+}
+.paragraphs {
+    padding: 0 20px 25px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    height: 200px;
+    box-shadow: 2px 2px 2px lightgrey;
+	overflow: hidden;
+  }
+
+
+  p{
+	  font-family: roboto;
+  }
+  .paragraphs .close {
+display: none;   top: 10px;
+    right: 10px;
+  }
+  .article .buttonn1 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 12px;
+    color: grey;
+    cursor: pointer;
+    transform: translate(-50%);
+    background-color: white;
+  }
+  .paragraphs-open {
+    height: auto;
+  }
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+#para1{
+    font-size: 20px;
+    font-family: roboto;
+    width: 60%;
+    height: auto;
+    margin-left: 260px;
+    margin-right: 50px;
+}
+.ourwork h3{
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 350;
+    margin-left: 20px;
+}
+.ourwork P{
+    font-family: roboto;
+    font-size: 15px;
+    margin-left: 250px;
+    margin-left: 60px;
+    margin-right: 50px;
+    width: 70%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#buton1{
+    margin-left: 80px;
+    background-color: aqua;
+    font-size: 20;
+    width: fit-content;
+    width: 50px;
+    
+}
+
+#button2{
+    margin-left: 500px;
+    background-color: aqua;
+    width: fit-content;
+}
+
+
+
+
+
+.main{
+    margin: 0;
+    padding: 0;
+    display: flexbox;
+    align-content: flex;
+    font-family: roboto;
+    
+    
+}
+
+
+.sec1{
+   float: left;
+   width: 33.33%;
+   height: 80vh;
+n   background-color: black;
+
+}
+.content1{
+    
+    margin-top: 15px;
+    text-align: center;
+    margin-left: 16px;
+    margin-bottom: 0;
+    width: 80%;
+    font-weight: 200;
+    color:#FFFFFF
+}
+.content1 h4{
+    color: #FFFFFF;
+    font-weight: 600;
+    opacity: 50%;
+    text-transform:uppercase ;
+}
+.content2 {
+    margin-top: 15px;
+    text-align: center;
+    margin-left: 16px;
+    margin-bottom: 0;
+    width: 80%;
+    font-weight: 250;
+    color:#FFFFFF
+    
+}
+.content2 a{
+    color: #FFFFFF;
+
+}
+.content3 p{
+    color:#FFFFFF;
+    margin-top: 15px;
+    width: 80%;
+    margin-left:50px;
+
+
+     
+}
+.list i{
+    margin-top: 20px;
+    display: flex;
+    margin-left: 50px;
+    font-weight: 800;
+    
+}
+.banner-area{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    background-image: url(imagesfolder/refugee\ photo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    
+}
+.banner-area h2{
+    text-align: center;
+    line-height: 10;
+    margin-top: 50px;
+}
+.helpimages{
+    display: flex;
+    column-count: 3;
+    width: 33.3%;
+    margin-bottom: 20px;
+    margin-left: 150px;
+}
+#imagesheader{
+    font-size: 15px;
+    font-family: roboto;
+    line-height: 10;
+    text-align: center;
+}
+.helpimages1 img{
+    margin-left: 50px;
+    margin-top: 40px;
+    width: 250px;;
+    height: 50vh;
+    margin-left: 80px;
+
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+.about-container {
+
+
+    display: flex;
+    column-count: 3;
+    column-gap: 30px;
+    column-rule-style: solid;
+    column-rule-width: 10px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    height: 300px;
+    margin-top: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    text-align:justify;
+    background-color: #FAFAFA;
+    
+    
+    
+    }
+    
+    
+    
+     h3 {
+    
+        font-size: 40px;
+        background-color: lightskyblue;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    
+    
+    }
+    
+    
+    .side-image {
+    
+        widht: 20px;
+        height: 60px;
+        margin-bottom: 20px;
+    
+    }
+    
+    
+    
+
+
+.main-newarticle      {
+
+    display: flex;
+    flex-direction: column;
+    column-count: 2;
+    align-items: stretch;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    
+    
+    
+    }
+    
+    .articlesheader h1{
+margin-top: 30px;
+        margin-left: 40%;
+        font-size: 30px;
+        
+    }
+    
+    
+     .first-report img {
+    
+        
+        margin-left: 200px;
+        width: 20%;
+        margin-right: 80px;
+        margin-bottom: 40px;
+     }
+    
+    
+     .first-report p  {
+    
+    
+        margin-left: 10px;
+        width: 50%;
+        margin-right: 60px;
+        
+        
+    
+     }
+
+     .first-report h2{
+
+        margin-top: 0px;
+        text-align: center;
+        margin-left: 180px;
+     }
+     
+     .second-report img  {
+    
+       margin-left: 200px;
+       width: 20%;
+       margin-right: 80px;
+       margin-bottom: 40px;
+    
+     }
+    
+     
+     
+     .second-report p  {
+    
+        
+        margin-left: 10px;
+        width: 50%;
+         margin-right: 80px;
+    
+     }
+    
+    
+     
+     .third-report img  {
+    
+       margin-left: 200px;
+       width: 20%;
+       margin-right: 80px;
+       margin-bottom: 40px;
+    
+     }
+    
+     
+     
+     .third-report p  {
+    
+       
+        margin-left: 10px;
+        width: 50%;
+       margin-right: 80px; 
+    
+     }
+    
+    
+     
+     
+     .fouth-report img  {
+    
+       margin-left: 200px;
+        width: 20%;
+        margin-right: 80px;
+        margin-bottom: 40px;
+    
+     }
+    
+     
+     
+     .fouth-report p  {
+    
+      
+        margin-left: 10px;
+        width: 50%;
+        margin-right: 80px;
+    
+     }
+    
+    
+     
+     .first-report   {
+      display: flex;
+    
+     }
+    
+    
+    
+    
+    
+     .second-report      {
+    
+        display: flex;
+    
+     }
+    
+     
+     .third-report      {
+    
+        display: flex;
+    
+     }
+    
+     
+     .fouth-report   {
+    
+        display: flex;
+    
+     }
